@@ -1,0 +1,18 @@
+{
+  "bindings": [
+    {
+      "name": "myBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "retailblobstore/RawData/{blobFileName}.txt",
+      "connection": "onlineretail_STORAGE"
+    },
+    {
+      "name": "outputBlob",
+      "direction": "out",
+      "type": "blob",
+      "path": "retailblobstore/BatchProcess/{blobFileName}.txt",
+      "connection": "onlineretail_STORAGE"
+    }
+  ]
+}
